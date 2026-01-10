@@ -23,3 +23,31 @@ public class Main
         //string S, int D, double f, char c
     }
 }
+/*
+CASTING em Java (conversão de tipos)
+
+1) WIDENING (implícito): menor -> maior (seguro)
+   int a = 10;
+   double b = a;      // 10.0
+
+2) NARROWING (explícito): maior -> menor (pode perder info)
+   double x = 9.99;
+   int y = (int) x;   // 9 (corta, não arredonda)
+
+3) Evitar divisão inteira
+   int p = 5, q = 2;
+   double r1 = p / q;          // 2.0 (inteira primeiro)
+   double r2 = (double) p / q; // 2.5
+
+4) char <-> int (Unicode)
+   char c = 'A';
+   int code = (int) c;  // 65
+   char d = (char) 66;  // 'B'
+
+5) Herança: upcasting / downcasting
+   Animal a1 = new Dog();      // upcasting (automático)
+   if (a1 instanceof Dog) {
+       Dog dog = (Dog) a1;     // downcasting (com cast)
+       dog.bark();
+   }
+*/
