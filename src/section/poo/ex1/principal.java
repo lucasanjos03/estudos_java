@@ -5,7 +5,9 @@ public class principal {
 
         //objeto1
         uzumaki naruto = new uzumaki();
-        naruto.nome = "Naruto Uzumaki";
+        naruto.setNome("Naruto Uzumaki");
+        naruto.getNome();
+        naruto.idade = 14;
         naruto.shakraInfinito();
         naruto.temBiju = true;
         naruto.ataqueBase();
@@ -13,7 +15,8 @@ public class principal {
 
         //objeto2
         uchiha sasuke = new uchiha();
-        sasuke.nome = "Sasuke Uchiha";
+        sasuke.setNome("Sasuke Uchiha");
+        sasuke.getNome();
         sasuke.nivelDeChakra = 99;
         sasuke.sharinganAtivado();
         sasuke.ataqueBase();
